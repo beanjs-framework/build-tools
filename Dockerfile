@@ -1,10 +1,10 @@
-FROM beanjs/dev-env-tools:1.0.1
+FROM ubuntu:latest
 
-# RUN apt-get update
-# RUN apt-get install -y \
-#     build-essential git python python-pip \
-#     lib32z1 lib32ncurses5
-# RUN pip install nrfutil
+RUN apt-get update
+RUN apt-get install -y \
+    build-essential git python python-pip \
+    lib32z1 lib32ncurses5
+RUN pip install nrfutil
 
 # --- ARM ENV (STM32,NRF,W600)---
 COPY ./gcc-arm-none-eabi-49 /opt/gcc-arm-none-eabi-49
