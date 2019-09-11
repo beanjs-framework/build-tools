@@ -19,8 +19,8 @@
 
 ```bash
 
-docker pull beanjs/dev-env:tagname
+docker pull beanjs/hw-build-env
 
-docker run -it -v <path to espruino>:/home/beanjs --name beanjs-envd -p 2323:2323 -d  beanjs/dev-env:tagname
+docker run -it -v <path to espruino>:/home/beanjs --name build-envd -p 2323:2323 -d  beanjs/hw-build-env
 
 ```
