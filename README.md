@@ -21,8 +21,8 @@
 
 ```bash
 
-docker pull beanjs/hw-build-env
+docker pull beanjs/build-tools
 
-docker run -it -v <path to espruino>:/home --name build-envd -p 2323:2323 -d  beanjs/hw-build-env
+docker run -it -v <path to espruino>:/home --name build-envd -p 2323:2323 -d  beanjs/build-tools
 
 ```
